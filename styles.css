@@ -1,0 +1,315 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
+}
+
+
+header{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;    
+    color: white;
+    background-color: rgba(6, 6, 6, .7);
+    
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+header nav .header{
+    display: flex;
+    justify-content: flex-end;
+    /* border: 1px solid black; */
+    width: auto;
+}
+
+header nav .header li{
+    margin-right: 20px;
+    list-style: none;
+    color: gray;
+    /* border: 1px solid red; */
+}
+header nav .header li a{
+    text-decoration: none;
+    color: white;        
+}
+
+figure{
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+
+.logo .i{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/* -------------------------Aqui termina el header---------------------------- */
+/* -------------------------Aqui comienza la barra---------------------------- */
+
+body section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body .iphone7{
+    width: 450px;
+    height: 750px;
+    border-radius: 18px;
+    border: 1px solid gainsboro;
+    /* background-image: url(../Iconos/Background.JPG); */
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+   
+}
+
+
+section .barra{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    color: white; 
+}
+.bateria{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+figure .bateria-logo{
+    margin: 0;
+    /* border: 1px solid red; */
+    height: 20px;
+}
+.señales{
+    display: flex;    
+}
+.señales i,
+.bateria-logo i{
+    padding: 0 5px;
+   
+}
+
+/* -------------------------Aqui termina la barra---------------------------- */
+/* -----------------------rotacion por un solo boton-------------------------- */
+#landscape.rotate0,
+#landscape.rotate180{
+    width: 750px;
+    height: 450px;
+    border-radius: 18px;
+    border: 1px solid gainsboro;
+    /* background-image: url(../Iconos/Background.JPG); */
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#landscape.rotate270,
+#landscape.rotate90{
+    width: 450px;
+    height: 750px;
+    border-radius: 18px;
+    border: 1px solid gainsboro;
+    /* background-image: url(../Iconos/Background.JPG); */
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#calculadora.rotate180,
+#calculadora.rotate0{
+    width: 750px;
+    height: 430px;
+}
+.rotate180 tbody tr,
+.rotate0 tbody tr{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.rotate180 tbody tr td button,
+.rotate0 tbody tr td button{
+    width: 150px;
+    height: 70px;
+    border-radius: 18px;
+    border: none;
+    color: white;
+    font-size: 30px;
+    margin: 3px;
+}
+.rotate180 tbody tr #result,
+.rotate0 tbody tr #result{
+    width: 100%;
+    height: 90px;
+    margin-bottom: 0;
+}
+
+.rotate180 tbody tr td #resultado,
+.rotate0 tbody tr td #resultado{
+    width: 100%;
+    height: 90px;
+    margin-bottom: 0;
+    font-size: 60px;
+}
+#calculadora.rotate90,
+#calculadora.rotate270{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    right: 50%;
+    left: 50%;
+    width: 100%;
+    height: 720px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border: none;
+}
+.rotate90 #calculadora td button,
+.rotate270 #calculadora td button{
+    display: block;
+    width: 90px;
+    height: 90px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+    margin:5px;
+    color: white;
+    font-weight: 600;
+   
+}
+
+/* -------------------------Aqui empiza la calculadora---------------------------- */
+.calculadora{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    right: 50%;
+    left: 50%;
+    width: 100%;
+    height: 720px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border: none;
+}
+
+
+
+.calculadora td button{
+    display: block;
+    width: 90px;
+    height: 90px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: none;
+    margin:5px;
+    color: white;
+    font-weight: 600;
+   
+}
+.calculadora td button i{
+    font-weight: 600;
+}
+.calculadora tr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+}
+#resultado{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    font-size: 90px;
+    margin-bottom: 50px;
+    width: 400px;
+    height: 250px;
+    background-color:  none;
+    /* overflow-y: scroll; */
+    border-radius: 25px;
+    color: white;
+    font-weight: 300;
+}
+.orange{
+    background-color: orange;
+    color: white;
+}
+.white{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+select{
+    width: 100px;
+    height: 30px;
+
+}
+/* -------------------------Aqui termina la calculadora---------------------------- */
+/* -------------------------Aqui empieza la rotacion---------------------------- */
+#bloqueado{
+    position: fixed;
+    left: 50%;
+}
+.btns{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+.btn{
+    width: 200px;
+    height: 30px;
+    border: none;
+    background-color: gray;
+    color: white;
+    margin: 10px;
+    border-radius: 15px;
+    
+}
+#landscape.active{
+    transform: rotate(90deg);
+}
+
+
+/* -------------------------Aqui termina la rotacion---------------------------- */
+/* -------------------------Aqui empiza el footer---------------------------- */
+
+footer{
+    width: 100%;
+    height: 20px;
+    padding: 10px 0 10px 0;
+    display:flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    /* border: 1px solid red; */
+}
+
+#Firma{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+#Firma i{
+    padding-left: 10px;
+}

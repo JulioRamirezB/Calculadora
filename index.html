@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/j5Bc718C/icono-Apple.png">
+    <script src="https://kit.fontawesome.com/356cf8bd5f.js"crossorigin="anonymous"></script>
+</head>
+<body onload="init()">
+    <header>
+            <figure class="logo">
+                <i class="fab fa-apple fa-3x"></i>                                
+            </figure>
+            <nav>
+                <ul class="header">
+                    <li><a href="https://julioramirezb.github.io/iPhone7/#iPhone7">Código</a></li>
+                    <li><a href="https://julioramirezb.github.io/iPhone7/#Bloqueado">Inicio</a></li>
+                    <li><a href="https://julioramirezb.github.io/iPhone7/#principal" >Principal</a></li>
+                    <li><a href="https://julioramirezb.github.io/iPhone7/#landscape">Landscape</a></li>
+                    <li><a href="../Práctica 3/ventana.html">Carpeta</a></li>
+                    <li><a href="https://julioramirezb.github.io/Slides/" >Fotos</a></li>
+                    <li><a href="https://julioramirezb.github.io/Landscape/">Slide</a></li>
+                </ul>
+            </nav>
+    </header>   
+    <section class="blockeado">
+        <div id="landscape"  class="iphone7">                               
+            <div class="barra">
+                <div class="señales">
+                    <div class="señales-cel">
+                        <i class="fas fa-signal"></i>
+                        
+                    </div>
+                    <div class="señales-telcel">TELCEL</div>
+                    <div class="señales-wifi">
+                        <i class="fas fa-wifi"></i>
+                        
+                    </div>            
+                </div>
+                <div class="candado">
+                    <!-- <i class="fas fa-lock"></i> -->
+                    11:35
+                </div>
+                <div class="bateria">
+                    <div>100%</div>
+                    <div class="bateria-logo">
+                        <i class="fas fa-battery-full"></i>
+                        
+                    </div>                           
+                </div>    
+        </div>               
+        <table id="calculadora" class="calculadora">
+            <tr>
+                <td id="result" colspan="4"><span id="resultado"></span></td>
+            </tr>
+            <tr>
+                <td><button id="siete" class="white" >7</button></td>
+                <td><button id="ocho" class="white" >8</button></td>
+                <td><button id="nueve" class="white" >9</button></td>
+                <td><button id="division" class="orange"><i class="fas fa-divide"></i></button></td>
+            </tr>
+            <tr>
+                <td><button id="cuatro" class="white" >4</button></td>
+                <td><button id="cinco" class="white" >5</button></td>
+                <td><button id="seis" class="white" >6</button></td>
+                <td><button id="multiplicacion" class="orange"><i class="fas fa-times"></i></button></td>
+            </tr>
+            <tr>
+                <td><button id="uno" class="white" >1</button></td>
+                <td><button id="dos" class="white" >2</button></td>
+                <td><button id="tres" class="white" >3</button></td>
+                <td><button id="resta" class="orange"><i class="fas fa-minus"></i></button></td>
+            </tr>
+            <tr>
+                <td><button id="igual" class="white" ><i class="fas fa-equals"></i></button></td>
+                <td><button id="reset" class="white" >C</button></td>
+                <td><button id="cero" class="white" >0</button></td>
+                <td><button id="suma" class="orange"><i class="fas fa-plus"></i></button></td>
+            </tr>
+    
+        </table>
+    </section>
+
+    <!-- Botones para rotar -->
+    <div class="btns">
+        <button type="button" onclick="rotate(90)" class="btn">Landscape</button>
+        <button type="button" onclick="rotate(360)" class="btn">Portrait</button>
+    </div>
+
+    <!-- barra para rotar -->
+    <div class="btns">
+        <input type="range" min="0" max="360" value="0" onchange="rotate2(this.value)">
+        transform: rotate(<span id="span1">0deg</span>);
+    </div>
+    <!-- rotar con un solo boton -->
+    <div class="btns">
+        <button type="button" id="btn-girar">Girar</button>
+    </div>
+    
+    
+    <div id="Firma1" style="position: fixed; top: 50%; left: 100px;" >
+        &#169 iNuc1eo. 
+    </div>
+    <footer>
+        <div id="Firma" >
+            &#169 Desarrollado por iNuc1eo. <i class="fab fa-apple"></i>
+        </div>
+
+    </footer>
+    
+
+    <script src="calculator.js"></script>
+</body>
+</html>
